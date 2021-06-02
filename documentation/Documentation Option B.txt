@@ -1,0 +1,9 @@
+Option B
+
+1.Show the histogram of each column of your datasetwithbins=5. How are the rangespainted?
+2.Which are the columns with the highest correlation?Draw the correlation matrix.
+3.Use Matplotlib functions to show all graphs. No pandasdirectly.
+4.Use your dataframe cleaned to insert its values to a MySQL database. 
+The info of thedatabase will be in the “sql” channel on Discord.
+To do that, you will need to create a Table with the dataframe columns. 
+The name of the table is your entire name using “_” between words. Ejemplo:“pepito_perez_galdos”

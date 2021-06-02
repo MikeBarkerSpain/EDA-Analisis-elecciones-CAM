@@ -1,0 +1,10 @@
+Option A
+
+1.Research to save each plot in local files.
+2.Use distributed modules for each functionality. 
+	Thejupyter notebooks must nothave any loop or functions. 
+	It only must have theinitials imports and the call tonecessary functions.
+3.Apart from matplotlib, use seaborn to show the graphs.
+4.Answer the questions:
+	a.Are there outliers or some rare data?
+	b.What are the columns that have more repeated values?

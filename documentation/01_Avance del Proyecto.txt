@@ -1,0 +1,38 @@
+1.- extracción de los datos políticos
+- hay que parsear con beautifulsoup los datos de los XMLs de las elecciones
+- los accesos se harán 2 a 2 ya que sólo hay que cambiar el número del municipio.
+una vez extraido los XMLs y pasados a diccionarios, se monta una línea con los datos por municipio.
+- intentar extraer los datos de longitud/latitud con data wrangling 
+
+2.- extracción de los datos de bares:
+http://overpass-api.de/api/interpreter -> mirar DE ARRIBA A ABAJO LA API DE ESTA ZONA 
+descargar polígono con fronteras administrativas de cada municipio CAM (buscar en SIG), buscar en Json o Geojson
+
+https://empresite.eleconomista.es/Actividad/HOSTELERIA/provincia/MADRID/ -> data wrangling como el de las birras/pelis
+
+
+presentación de los datos:
+https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_hist.html#sphx-glr-gallery-lines-bars-and-markers-scatter-hist-py
+--> histograma con nube de puntos -> delta varianza de voto por tamaño del pueblo.
+
+a saber a fuego
+https://seaborn.pydata.org/generated/seaborn.histplot.html
+https://seaborn.pydata.org/generated/seaborn.countplot.html
+https://seaborn.pydata.org/generated/seaborn.catplot.html
+https://seaborn.pydata.org/generated/seaborn.kdeplot.html
+https://seaborn.pydata.org/generated/seaborn.scatterplot.html
+https://seaborn.pydata.org/generated/seaborn.JointGrid.html   	!!!!!!!
+https://seaborn.pydata.org/generated/seaborn.PairGrid.html	!!!!!
+https://seaborn.pydata.org/generated/seaborn.FacetGrid.html	!!!!!
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html!!!!
+
+tutoriales
+https://seaborn.pydata.org/tutorial/axis_grids.html
+
+
+Estrategia/notas
+1.- hay que obtener la serie de datos de 2019/2021 por cada pueblo (wrangling sesion 1)
+2.- de esa lista, hayq ue filtrar aquellos pueblos en los que no ganó el PP en 2019 (justificar)
+3.- priorizar la búsqueda de los datos de bares para esos pueblos sobre el resto
+4.- analizar los datos obtenidos
+	- analizar aquellos pueblos con más interesés (aumento de los votos contabilizados -incluso categorizar por ese dato, 10%+, entre 10% y 5%, entre 5%y0% y los inversos

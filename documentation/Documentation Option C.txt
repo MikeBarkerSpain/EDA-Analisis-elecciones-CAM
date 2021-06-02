@@ -1,0 +1,73 @@
+1.Document all steps. Structure your code to keep it cleaned using  good practices.
+2.Use Trello to manage your project
+3.The dashboard created must have at least three menu sections. 
+	The first one is the welcome
+	the second one is related to visualize your cleaned data 
+	the third one must call your own flask API and show the json returned.
+
+4.Collect the data. Try to do that each call, it collects the last updated data.
+Since the data are quite static (elections 2019 and 2021, population in 2020 and bars and restaurants, there is no need to refresh the collection daily).  
+
+5.Determine and explain if the data is cleaned. If not,then clean it.
+5.1- For the election votes of the CAM:
+The data has been created in order to be mainly clean, however, there are columns unnecessary so they are droped from the main table such as all the original values from eah election (2019 and 2021)
+5.2.- For the activities locals in Madrid:
+The data has been cleaned since the data in both the columns and the rows are eventually unnecessary. 
+The columns have been removed following a non-profitable data basis (such as the name of the street of the local)
+The rows have been filtered following an activity classification  criteria. The data where organized in a three level categories system, which was only one category completely profitable and partially another category.
+5.3.- For the election votes of Madrid:
+The data where provided with some minor useless data and misshapen, but it has been easy to fix it with spreadsheet applications.
+5.4.- Data for the activities in the CAM:
+NOt data has been found yet.
+
+6.Show different tendencies for each column in your dataset.
+The main tendency to be analyzed is the PP vote. 
+For this values there are several columns that show a significative correlation:
+	- D-Contabilizados 	(+0.64)
+	- D-Abstenciones	(-0.64) -> correlación directa entre Cont y Abs
+	- D-MÁS MADRID		(-0.49)	-> correlación bastante interesante
+	- D-VOX			(-0.49)
+	- D-Cs			(-0.75)
+
+7.Represent, in a pie chart, the time you have needed for each point in the The project steps section.
+	searching the data:
+		c1 research + CAM election in 2021: 1h
+		c2 research + CAM election in 2019: 2h
+		c3 research + Restaurants/bars/pubs: 3h+
+		d1 coding the dataframe generation for the CAM election results: 6h00
+		d2 coding the dataframe generation for the population: 1h30
+		d3 cleanning + coding the dataframe for act. in MAdrid: 1:30
+		d4 cleanning + coding the dataframe for votos in MAdrid: 3h
+		d5 analyzing Data of d4 and d5 3h
+		d6 SQL 3h30
+
+		f0 organization/reading documentation for the project: 30min
+		f1 writing the documentation for the job done: 1h00min
+		f2 memo 3h15
+		f3 PPT 1h15min
+		f4 Trello 1:45min
+		f5 Occupation pie
+
+		h1 flask - 4h
+		h2 streamlit - 6h 
+		h3 Visualization 9h30
+
+https://matplotlib.org/stable/gallery/pie_and_polar_charts/nested_pie.html#sphx-glr-gallery-pie-and-polar-charts-nested-pie-py
+https://www.dataforeverybody.com/matplotlib-seaborn-pie-charts/
+
+8.Show five graphs in which you can conclude your hypothesis
+- histograma de D-PP por distrito
+- Histograma de Locales por distrito
+-> Histograma D-PP/Locales: no hay una correlación (demasiada dispersión con respecto a la media)
+
+- Boxplot identificación outliers
+
+-> Scatter con y sin outliers, la nube de puntos no muestra una correlación (al calcularla se obtiene un 0'33)
+
+
+
+9.Answer the questions:
+	a.Was it possible to demonstrate the hypothesis? Why?
+	b.What can you conclude about your data study?
+	c.What would you change if you need to do another EDAproject?
+	d.What do you learn doing this project?6

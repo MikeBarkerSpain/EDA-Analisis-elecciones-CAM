@@ -1,0 +1,50 @@
+Recapitulación del trabajo hecho por días
+
+01//06/2021
+Se acaba de crear la tabla de SQL 
+Se acaba la memoria del proyecto a falta de la tarta de tiempo
+se acaba la presentación
+
+31 de mayo
+se generan las instrucciones para crear la tabla de SQL que contenga los datos del dataset
+
+se acaba el entorno de streamlit 
+
+29 y 30 de Mayo
+Se desarrolla el entorno mínimo de streamlit  así como la visualización de las gráficas para desarrollar el análisis de los datos. 
+el estudio revela que no hay una correlación entre las variables, ya que hay una muy baja correlación (0'33)
+
+28/05/2021
+Se transforma el código de .ipynb a .py
+
+Se acaba de construir el flask para implementarlo en el streamlit.
+
+
+27/05/2021
+Se analiza el concepto de flask y se pelea con el concepto
+
+Se pone en marcha el seguimiento del proyecto con Trello
+
+26/05/2021
+Se limpia el dataframe con los datos de los locales de madrid y se consigue generar un dataframe que agrupe los locales por barrio y distrito. Se consigue analizar los datos generando la matriz de correlación, que tiene poco parecido a la matriz de correlación de los municipios.
+
+Se buscan los datos de bares en función de su ubicación, pero es no se llega a conseguirlo.
+
+25/05/2021
+se añaden a los municipios los datos de población total y por género, obtenida del INE, haciendo el JOIN a través del código postal dal municipio.
+Se hace una primera prospección de los datos con la matriz de correlación, lo cual resalta varias tendencias, tantos esperadas como inesperadas:
+- esperadas: 	aumento de la participación (aumento de votos contabilizados)		-> crispación en aumento
+		correlación negativa entre la variación del voto del PP y la de Cs	-> concentración al voto útil
+		correlación negativa entre la variación del voto del PP y la de VOX	-> concentración al voto útil
+-inesperadas:	correlación negativa entre la variación del voto del PP y la de MÁS MADRID
+
+Se empieza la preparación del archivo de locales de madrid, se eliminan las columnas innecesarias y se empiezan a construir los filtros, pero sin llegar a una conclusión 
+
+24/05/2021
+trabajo realizado: se ha conseguido crear en una lista única una lista por municipio con todos los datos generales del municipio (nombre, votos contabilizados, abstenciones, nulos, blancos) así como un diccionario con los datos de los partidos más relevantes organizados por trío: votos en 2021, votos en 2019 y Delta de los votos entre las elecciones.
+
+El objetivo es crear un csv que contenga estos datos para que se puedan cargar en un dataFrame y así puedan ser mani'pulados con las herramientas habituales de visulización y cruce de datos. 
+
+Queda pendiente la extracción del número de bares por municipio, esto en principio se puede lograr mediante varias herramientas, pero de momento es un frente a mantener en standby. 
+
+Sería interesante añadir al csv de los municipios datos de latitud, longitu y población, de forma a poder crear una presentación más atractiva visualmente.

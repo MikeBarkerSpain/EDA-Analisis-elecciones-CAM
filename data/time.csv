@@ -1,0 +1,21 @@
+Categoría;Subcategoría;Horas;Porcentaje
+Búsqueda de datos;Elecciones a la asamblea 2021 y 2019;3,25;5,65217391304348
+Búsqueda de datos;Hostelería en Madrid;3,25;5,65217391304348
+Data Wrangling & Mining;Dataframe votos en la CAM;6;10,4347826086957
+Data Wrangling & Mining;Dataframe actividades en la CAM;1,5;2,60869565217391
+Data Wrangling & Mining;Dataframe actividades en Madrid metropolitano;1,5;2,60869565217391
+Data Wrangling & Mining;Dataframe votos en Madrid metropolitano;3;5,21739130434783
+Documentación;Análisis de requisitos;0,5;0,869565217391304
+Documentación;Seguimiento del proyecto;1;1,73913043478261
+Documentación;Memoria;1;1,73913043478261
+Documentación;Documento de presentación;3,25;5,65217391304348
+Documentación;Trello;1,25;2,17391304347826
+Documentación;Empleo del tiempo;3,25;5,65217391304348
+Visualización de datos;Análisis de datos;3;5,21739130434783
+Visualización de datos;Flask;4;6,95652173913043
+Visualización de datos;Streamlit-básicos;6;10,4347826086957
+Visualización de datos;Streamlit-filtros;3;5,21739130434783
+Visualización de datos;Plots;9,5;16,5217391304348
+BDD;SQL;3,5;6,08695652173913
+
+

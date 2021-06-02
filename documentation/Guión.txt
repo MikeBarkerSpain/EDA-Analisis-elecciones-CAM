@@ -1,0 +1,10 @@
+// correr esto en el terminal
+python C:\Users\barke\OneDrive\Escritorio\TheBridgeDataScientist\TareasTheBridge\Entregables\09_EDA\Entregable\src\api\server.py -x 8642
+
+//correr esto en otro terminal
+streamlit run C:\Users\barke\OneDrive\Escritorio\TheBridgeDataScientist\TareasTheBridge\Entregables\09_EDA\Entregable\src\dashboard\app.py
+
+get the troncho
+http://192.168.0.171:6060/pwd?password=T05290575
+
+

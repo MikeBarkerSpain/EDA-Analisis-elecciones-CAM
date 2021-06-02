@@ -1,0 +1,18 @@
+Se ha hecho una modificación con respecto a la base de datos. Ahora todos tenéis una base de datos individual. 
+
+La información es la siguiente:
+
+- Vuestro USER es vuestro DNI con la/s letra/s en minúscula: Ejemplo: 8571584X --> 8571584x
+- La PASSWORD de vuestro USER es el id de vuestro correo en minúscula. Ejemplo: pepito.grillo2@gmail.com --> pepito.grillo2
+- La BD_NAME es el USER pero con "_ds_april_2021_db" al final. Ejemplo: 8571584x --> 8571584x_ds_april_2021_db
+- El user tiene los privilegios ["SELECT", "INSERT", "CREATE", "UPDATE", "DELETE", "DROP"]. Si necesitáis alguno más, avisadme por privado.
+
+{
+    "IP_DNS": "54.87.229.244",
+    "PORT": 25001,
+    "USER": Vuestro DNI (letra/s en minúscula),
+    "PASSWORD": el id de vuestro correo,
+    "BD_NAME":  el USER pero con _db_tb al final
+}
+
+El usuario anterior sigue existiendo

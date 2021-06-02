@@ -1,0 +1,49 @@
+Para los proyectos se necesitan 5 tipo de información: 
+
+3.0 Tema
+Política Territorial
+
+3.1 Título 
+Análisis del impacto político de bares y restaurantes en las últimas elecciones de la CAM
+catalapiedra	 80 bares/1000 habs	-> +75% voto al pepe
+madrejos del sur 40 bares/1000 habts	-> +40% voto al pepe
+
+3.2 Abstract/resumen 
+En la precampaña de las últimas elecciones a la comunidad de madrid se ha polemizado mucho sobre la posible influencia de los bares y restaurantes en los resultados de las elecciones; el propio director del CIS ha expresado su opinión sobre el tema llamando 'tabernarios' a los partidarios de uno de los candidatos de los partidos políticos que se presentaban.
+
+El objetivo de este análisis es demostrar si hay o no una correlación entre el número de bares y restaurantes de los municipios de la comunidad de Madrid y la evolución del voto de esos municipios entre las elecciones de 2019 y 2021.
+
+3.3 Hipótesis (frase afirmativa que se podrá reafirmar o refutar). 
+A mayor número de bares y restaurantes por habitante, mayor voto hacia el PP/Vox debido a que ambos apoyaron el toque de queda tardío para la continuación de la actividad.
+
+3.4 SI/NO encontrado datos sobre el tema.
+TO-DO
+elecciones 2021 -> OK
+https://www.epdata.es/datos/elecciones-comunidad-madrid-mayo-2021-datos-graficos/584
+https://resultados.elpais.com/elecciones/2021/autonomicas/12/28/03.html -> vista 'bonita'
+https://rsl00.epimg.net/elecciones/2021/autonomicas/12/28/09.xml2	-> XML 'exportable'
++ librería que transforma XML a un diccionario
+
+elecciones 2019 -> OK
+https://resultados.elpais.com/elecciones/2019/autonomicas/12/28/03.html -> vista 'bonita'
+https://rsl00.epimg.net/elecciones/2019/autonomicas/12/28/09.xml2	-> XML 'exportable'
++ librería que transforma XML a un diccionario
+https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica/Areas-de-informacion-estadistica/Elecciones-y-participacion-ciudadana/Elecciones-/Resultados-electorales-Asamblea-de-Madrid-2021/?vgnextfmt=default&vgnextoid=6d1cb9211cb39710VgnVCM1000001d4a900aRCRD&vgnextchannel=1a47c2338522a210VgnVCM1000000b205a0aRCRD
+
+numero de bares/restaurantes por municipio -> OK
+https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=66665cde99be2410VgnVCM1000000b205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default
+-> datos del municipio de Madrid, para analizar por barrios
+
+https://datos.gob.es/es/catalogo/l01280796-elecciones-asamblea-de-madrid-1983-2019
+-> datos del histórico de las elecciones de la asamblea
+
+Enlaces de interés
+https://opencagedata.com/tutorials/geocode-in-python
+-> para sacar información de ciudades/localizaciones -> interesante para obtener longitud y latitud
+
+openstreetmap
+-> para sacar información de bares/localizaciones
+
+https://developer.foursquare.com/docs/build-with-foursquare/categories/
+Food
+4d4b7105d754a06374d81259

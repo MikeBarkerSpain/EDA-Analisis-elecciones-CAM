@@ -1,0 +1,11 @@
+i.“folders_tb.py” that contains the generic functionality related to open,create, read and write files.
+
+ii.“visualization_tb.py” that contains the generic functionality related to pandas, matplotlib, seaborn and other libraries focus on visualizations.
+
+iii.“mining_data_tb.py” that contains the generic functionality related to collect data, clean data and others (wrangling methods such us working with multiples jsons)
+
+iv.“dashboard_tb.py” that contains the functionality related to the dashboard.
+
+v.“apis_tb.py” that contains the generic functionalityrelated to working with APIs.
+
+vi.Others that the student needs.
