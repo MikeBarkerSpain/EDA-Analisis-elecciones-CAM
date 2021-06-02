@@ -1,3 +1,6 @@
+# se eliminan los archivos de configuración
+*settings.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
