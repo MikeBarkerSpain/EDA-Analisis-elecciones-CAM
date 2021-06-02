@@ -57,7 +57,7 @@ def menu_datos(df):
 
     st.subheader('Datos por Distrito:')
     var_PP_distri = df.groupby('Distritos')['D-PP'].sum()
-    st.subheader('Variación del voto al PP por distrito:')
+    st.subheader('Variación del voto al PP por distrito (votos 2021 - votos 2019):')
     st.bar_chart(var_PP_distri)
 
     Locales_distri = df.groupby('Distritos')['Locales'].sum()
@@ -68,9 +68,10 @@ def menu_datos(df):
     st.subheader('Variación del voto al PP dividida por el número de locales:')
     st.bar_chart(varPPlocales)
 
-    st.write('''Dado que los dos primeros histogramas no tienen formas semejantes, el tercero, que representa 
-    una variable que relaciona la variación del voto al PP en función del número de bares del distrito, se 
-    puede pensar que no hay correlación entre la variación del voto al PP y el número de bares de un distrito.''')
+    st.write('''Dado que los dos primeros histogramas no tienen formas semejantes, y el tercero, que representa 
+    una variable que relaciona la variación del voto al PP en función del número de bares del distrito, no tiene
+    una distribución uniforme entorno a una 'media' dado que las barras tienen alturas muy dispares, 
+    se puede pensar que no hay correlación entre la variación del voto al PP y el número de bares de un distrito.''')
 
     st.write('''No obstante, hay que diseccionar los datos detallándolos a nivel de barrio para ver si esa correlación existe o no.
     Para ello, lo primero es identificar los outliers existentes si los hubiera y dejarlos fuera del análisis de valores.''')
@@ -239,7 +240,7 @@ def menu_filtrado(df):
     df_filtrado = filtrar(df, distritos, filtro_distrito, barrios, filtro_barrio, censo, filtro_censo, partido_ant, filtro_partido_ant)
 
     if df_filtrado.shape[0] == 0:
-        st.warning("Los filtros que has seleccionado no nos devuelven ningun punto de carga")
+        st.warning("Los filtros que has seleccionado no nos devuelven ningun valor.")
         st.stop()
 
     graficas(df_filtrado, filtro_distrito, filtro_barrio, filtro_censo, filtro_partido_ant, visu)
@@ -290,13 +291,25 @@ def filtrar(df, distritos, filtro_distrito, barrios, filtro_barrio, censo, filtr
 
 def graficas(df_filtrado, filtro_distrito, filtro_barrio, filtro_censo, filtro_partido_ant, visu):
     
+    
+    font = {'family': 'serif',
+        'color':  'darkred',
+        'weight': 'normal',
+        'size': 12,
+        }
     if visu == 'No':
-        g = sns.lmplot(height=6, data=df_filtrado, x="Locales", y="D-PP")
-        plt.figure(figsize=(5,5))
+        fig, ax = plt.subplots(figsize=(10,10))
+        g = sns.lmplot(data=df_filtrado, x="Locales", y="D-PP", height=6, aspect=9/6)
+        stat = stats.pearsonr(df_filtrado['D-PP'], df_filtrado['Locales'])
+        stat_r = round(stat[0], 3)
+        plt.text(200, 0, f'Correlación de Pearson: {stat_r}', fontdict=font)
         plt.show()
         st.pyplot(g)
     else:
-        g = sns.lmplot(height=6, data=df_filtrado, x="Locales", y="D-PP", hue='anterior',palette="Set1")
-        plt.figure(figsize=(10,10))
+        fig, ax = plt.subplots(figsize=(5,5))
+        g = sns.lmplot(data=df_filtrado, x="Locales", y="D-PP", hue='anterior',palette="Set1", height=6, aspect=9/6)
+        stat = stats.pearsonr(df_filtrado['D-PP'], df_filtrado['Locales'])
+        stat_r = round(stat[0], 3)
+        plt.text(200, 0, f'Correlación de Pearson: {stat_r}', fontdict=font)
         plt.show()
         st.pyplot(g)

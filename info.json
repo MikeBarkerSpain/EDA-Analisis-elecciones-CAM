@@ -7,6 +7,6 @@
 "project_description" : "En la precampaña de las últimas elecciones a la comunidad de madrid se ha polemizado mucho sobre la posible influencia de los bares y restaurantes en los resultados de las elecciones; el propio director del CIS ha expresado su opinión sobre el tema llamando 'tabernarios' a los partidarios de uno de los candidatos de los partidos políticos que se presentaban.El objetivo de este análisis es demostrar si hay o no una correlación entre el número de bares y restaurantes de los municipios de la comunidad de Madrid y la evolución del voto de esos municipios entre las elecciones de 2019 y 2021.",
 "flask_port" : 6060,
 "streamlit_port" : 8501,
-"links" : "Más inforamción en la memoria del proyecto. seguimiento del proyceto en Trello: https://trello.com/b/9Xe1NAcy/ppmad-hosteleria",
+"links" : "Más inforamción en la memoria del proyecto. seguimiento del proyceto en Trello: https://trello.com/b/9Xe1NAcy/ppmad-hosteleria, https://github.com/MikeBarkerSpain/EDA-Analisis-elecciones-CAM",
 "python_libraries_used" : ["streamlit", "pandas", "numpy", "flask", "matplotlib", "seaborn"]
 }
